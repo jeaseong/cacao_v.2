@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 7px;
 }
 
 .friend .friend-avatar {
@@ -13,7 +14,6 @@
 
 .friend-avatar.g-avatar {
   width: 70px;
-  height: 60px;
 }
 
 .friend-avatar.m-avatar {
