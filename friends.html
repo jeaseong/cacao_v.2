@@ -43,7 +43,7 @@
     </header>
     <main class="friends">
       <header class="friends__header">
-        <div class="friends__friend friend friend--lg">
+        <div class="friends__friend friend">
           <div class="friends__column">
             <img class="g-avatar friend-avatar" src="img/avatar.jpg" alt="" />
             <div class="friend__content">
@@ -61,7 +61,7 @@
         <h5 class="friends__title">Plus friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img class="g-avatar friend-avatar" src="img/avatar.jpg" alt="" />
+            <img class="friend-avatar" src="img/avatar.jpg" alt="" />
             <div class="friend__content">
               <span class="friend__name">
                 Plus friend
@@ -73,23 +73,27 @@
       <ul class="friends__list">
         <h5 class="friends__title">Friends 14</h5>
         <li class="friends__friend friend friend--lg">
-          <div class="friend__column">
-            <img class="g-avatar friend-avatar" src="img/avatar.jpg" alt="" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Yeon
-              </span>
-              <span class="friend__status">
-                I'll be best teacher
-              </span>
+          <a class="friend" href="chat.html">
+            <div class="friend__column">
+              <img class="friend-avatar" src="img/avatar.jpg" alt="" />
+              <div class="friend__content">
+                <span class="friend__name">
+                  Yeon
+                </span>
+                <span class="friend__status">
+                  I'll be best teacher
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__now-listening">
-              <span>program-J.S(best singer)</span>
-              <i class="fas fa-play"></i>
+            <div class="friend__column">
+              <div class="friend__now-listening">
+                <span
+                  >program-J.S(best singer)
+                  <i class="fas fa-play"></i>
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
       </ul>
     </main>
@@ -102,6 +106,7 @@
         </li>
         <li class="nav__list-items">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="far fa-comment"></i>
           </a>
         </li>
@@ -117,5 +122,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen smaller!!</span>
+    </div>
   </body>
 </html>

@@ -10,71 +10,85 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <div class="status-bar__clock">
-          <span>18:23</span>
+  <body class="chats__body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <div class="status-bar__clock">
+            <span>18:23</span>
+          </div>
         </div>
-      </div>
-      <div class="status-bar__column">
-        <div class="status-bar__icon">
-          <i class="fas fa-clock"></i>
-          <i class="fas fa-volume-mute"></i>
-          <i class="fas fa-wifi"></i>
+        <div class="status-bar__column">
+          <div class="status-bar__icon">
+            <i class="fas fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
 
-          <span class="status-bar__battery-level">100%</span>
-          <i class="fas fa-battery-full"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+          </div>
         </div>
       </div>
+      <header class="header">
+        <div class="header__header-column">
+          <a class="header__back-btn" href="index.html">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Girl Friend</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a class="header__back-btn" href="index.html">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">Girl Friend</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">friday, january 06.2020</span>
-        <li class="incoming-message message">
-          <img src="img/avatar.jpg" class="g-avatar message__avatar" alt="" />
+        <li class="incoming-message message incoming-message-1">
+          <img src="img/avatar.jpg" class="m-avatar message-avatar" alt="" />
           <div class="message__content">
+            <span class="message__bubble">I love you. I'm pretty girl</span>
             <span class="message__author">Girl Friend</span>
-            <span class="message__bubble">I love you</span>
           </div>
-          <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message sent-message-1">
           <span class="message__timestamp"></span>
           <div class="message__content">
-            <span class="message__bubble">I love you</span>
+            <span class="message__bubble">I love you. Would you marry me?</span>
+          </div>
+        </li>
+        <li class="incoming-message message incoming-message-2">
+          <img src="img/avatar.jpg" class="m-avatar message-avatar" alt="" />
+          <div class="message__content">
+            <span class="message__bubble">I love you. I'm pretty girl</span>
+            <span class="message__author">Girl Friend</span>
+          </div>
+        </li>
+        <li class="incoming-message message incoming-message-3">
+          <img src="img/avatar.jpg" class="m-avatar message-avatar" alt="" />
+          <div class="message__content">
+            <span class="message__bubble">I love you. I'm pretty girl</span>
+            <span class="message__author">Girl Friend</span>
           </div>
         </li>
       </ul>
     </main>
-    <div class="chat__write">
-      <div class="chat__write-column">
-        <i class="far fa-plus-squre"></i>
+    <div class="chat__write-container">
+      <input
+        type="text"
+        class="chat__write-input chat__write"
+        placeholder="send message"
+      />
+      <div class="chat__icon-left chat__icon">
+        <i class="far fa-plus-square"></i>
       </div>
-      <div class="chat__write-column">
-        <input
-          type="text"
-          class="chat__write-input"
-          placeholder="send message"
-        />
-      </div>
-      <div class="chat__write-column">
+
+      <div class="chat__icon-right chat__icon">
         <span class="chat__write-icon">
           <i class="far fa-smile-wink"></i>
         </span>
@@ -82,6 +96,9 @@
           <i class="fas fa-microphone"></i>
         </span>
       </div>
+    </div>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen smaller!!</span>
     </div>
   </body>
 </html>
