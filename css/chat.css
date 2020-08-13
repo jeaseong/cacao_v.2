@@ -9,6 +9,8 @@
     0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
+
+
 .chats__body {
   padding: 0;
   padding-top: 100px;
@@ -58,10 +60,12 @@
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
       0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   }
+
   50% {
     box-shadow: 0 13px 27px -25px rgba(50, 50, 93, 0.25),
       0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   }
+
   100% {
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
       0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
@@ -94,7 +98,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.chat__write:focus ~ .chat__icon {
+.chat__write:focus~.chat__icon {
   opacity: 0;
 }
 
@@ -151,6 +155,7 @@
   from {
     transform: none;
   }
+
   to {
     transform: rotateY(3turn);
   }
@@ -198,11 +203,13 @@
     opacity: 0;
     transform: translateX(-200px);
   }
+
   to {
     opacity: 1;
     transform: none;
   }
 }
+
 .incoming-message {
   animation: incomingAnim 0.5s ease-out forwards;
 }
@@ -212,11 +219,13 @@
     opacity: 0;
     transform: translateX(200px);
   }
+
   to {
     opacity: 1;
     transform: none;
   }
 }
+
 .sent-message {
   animation: sentAnimation 0.5s ease-out forwards;
 }
